@@ -1,0 +1,152 @@
+body{
+    font-family: 'Tinos', serif;
+}
+
+a{
+    color:#0088ff;
+}
+
+a:focus{
+    font-weight: bold;
+    outline: #0088ff 3px dotted;
+    outline-offset: 4px;
+}
+
+.profile-photo{
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.other-links{
+    right: -5px;
+    position: relative;
+}
+.gulucuk{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+::selection {
+    color: black;
+    background: yellow;
+}
+
+.has-opacity{
+    transition: all .3s;
+    opacity: 0.3;
+}
+
+.c-looking-btn{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    padding: 5px;
+    border: 2px solid #dd1818;
+    display: inline-block;
+    border-radius: 7px;
+    position: absolute;
+    right: 35px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transform: skewY(6deg);
+    user-select: none;
+    cursor: pointer;
+    background: white;
+    z-index: 3;
+    height: 55.98px;
+    overflow: hidden;
+}
+
+.c-looking-btn .text{
+    text-align: center;
+}
+
+.fading{
+    opacity: 0;
+}
+
+
+.c-looking-btn .text{
+    background: -webkit-linear-gradient(top,#333333, #dd1818 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-small{
+    font-size: 15px;
+}
+.skill-capital{
+    padding:10px;
+    background-color: #0088ff;
+}
+
+.skill-level{
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    left: 7px;
+    position: relative;
+    top: 0px;
+}
+
+.c-skill-cards{
+    width: 100px;
+    position: absolute;
+    /* right: 23px; */
+    margin-left: -100px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.skill-name{
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    user-select: none;
+}
+
+.s{
+    padding-left:10px;
+    
+}
+
+#Skills:hover .c-skill-cards{
+    opacity: 1;
+    margin-top: 20px;
+    margin-left:-115px;
+}
+
+.opacitied{
+    opacity: .5;
+}
+
+.dark-side-off-the-moon{
+    width:64px;
+    height:64px;
+    background:black;
+}
+.c-merhaba{
+    position: fixed;
+    bottom: 45px;
+    user-select: none;
+    overflow: hidden;
+}
+.merhaba-text{
+    font-weight: 800;
+    font-size: 120px;
+    font-family: 'Pacifico', cursive;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.internship-content{
+    font-size: 11px;
+    padding-left: 9px;
+}
