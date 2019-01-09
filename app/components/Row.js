@@ -8,11 +8,11 @@ export default class Row extends React.Component {
   render () {
     const {title = '', children} = this.props;
     return (
-      <section className="row mt-3" id={title}>
+      <section className={`row mt-3 c-${title.toLowerCase ()}`} id={title}>
         <div className="col-4 opacity-on-drag text-right">
           <span>
             <b>{title && `${title}:`}</b>
-            </span>
+          </span>
         </div>
         <div className="col-8 pl-0 text-justify">
           {children}
