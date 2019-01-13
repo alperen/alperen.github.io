@@ -1,0 +1,27 @@
+body{
+  font-family: initial !important;
+
+  .opacitied{
+    opacity: .5;
+  }
+
+  .has-opacity{
+    transition: all .3s;
+    opacity: 0.3;
+  }
+
+  a{
+    color:$blue;
+  }
+
+  a:focus{
+    font-weight: bold;
+    outline: $blue 3px dotted;
+    outline-offset: 4px;
+  }
+
+  ::selection {
+    color: black;
+    background: yellow;
+  }
+}

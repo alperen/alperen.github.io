@@ -1,0 +1,29 @@
+.c{
+
+  &-skill-levels{
+    width: 100px;
+    position: absolute;
+    /* right: 23px; */
+    margin-left: -100px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: all .2s;
+
+    .label{
+      font-size: 13px;
+      display: block;
+      text-align: right;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    .level-box{
+      height: 8px;
+      width: 8px;
+      display: inline-block;
+      left: 7px;
+      position: relative;
+      top: 0px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.c-looking-btn{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  padding: 5px;
+  border: 2px solid #dd1818;
+  display: inline-block;
+  border-radius: 7px;
+  position: absolute;
+  right: 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  transform: skewY(6deg);
+  user-select: none;
+  cursor: pointer;
+  background: white;
+  z-index: 3;
+  height: 55.98px;
+  overflow: hidden;
+
+  .text{
+    text-align: center;
+    background: -webkit-linear-gradient(top,#333333, #dd1818 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+} 

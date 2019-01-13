@@ -1,0 +1,19 @@
+.c{
+  &-skills{
+
+    &:hover .c-skill-levels{
+      opacity: 1;
+      margin-top: 20px;
+      margin-left:-115px;
+    }
+
+    .level{
+      height: 8px;
+      width: 8px;
+      display: inline-block;
+      left: 7px;
+      position: relative;
+      top: 0px;
+    }
+  }
+}
