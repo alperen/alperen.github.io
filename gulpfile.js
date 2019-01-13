@@ -13,11 +13,13 @@ gulp.task ('sass', () => {
         precision: 10,
       }).on ('error', sass.logError)
     )
-    .pipe (gulp.dest ('./public/main2bundle.css'));
+    .pipe (gulp.dest ('./public/'));
 });
 
 gulp.task ('sass:watch', () => {
-  gulp.watch (['./scss/**/**.scss'], ['sass']);
+  gulp.watch (['./scss/**/**.scss'], [], () => {
+    gulp.run ('sass');
+  });
 });
 
 gulp.task ('default', ['sass:watch']);
