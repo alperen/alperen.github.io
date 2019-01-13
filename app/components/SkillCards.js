@@ -17,31 +17,31 @@ export default class SkillCards extends React.Component {
   }
 
   filterBySkillLevel (id) {
-    document.querySelectorAll (`.skill-label:not(.L-${id})`).forEach (e => {
+    document.querySelectorAll (`.c-skill-single:not(.L-${id})`).forEach (e => {
       e.classList.add ('opacitied');
     });
 
     analytics.event ({
       category: 'SKILLS',
       action: 'SKILLS_FILTERED',
-      label:id
+      label: id,
     });
   }
 
   filterBySkillLevelRemove (id) {
-    document.querySelectorAll (`.skill-label:not(.L-${id})`).forEach (e => {
+    document.querySelectorAll (`.c-skill-single:not(.L-${id})`).forEach (e => {
       e.classList.remove ('opacitied');
     });
   }
 
   render () {
     return (
-      <div className="c-skill-cards opacity-on-drag">
+      <div className="c-skill-levels opacity-on-drag">
         {colors.map (({color, name}, ii) => {
           return (
             <div
               key={ii}
-              className="skill-card-label"
+              className="label"
               id={name}
               onMouseOver={() => {
                 this.filterBySkillLevel (name);
@@ -50,14 +50,11 @@ export default class SkillCards extends React.Component {
                 this.filterBySkillLevelRemove (name);
               }}
             >
-              <span className="skill-name">
+              <span>
                 {' '}
-                <span
-                  className="skill-level"
-                  style={{backgroundColor: color}}
-                />
+                <span className="level-box" style={{backgroundColor: color}} />
                 {' '}
-                <span className="s">{name}</span>
+                <span className="s pl-2">{name}</span>
                 {' '}
               </span>
             </div>

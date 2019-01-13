@@ -7,7 +7,7 @@ import analytics from '../analytics';
 
 const Photo = posed.img ({
   draggable: 'y',
-  dragBounds: { top:-100, bottom:500 },
+  dragBounds: {top: -100, bottom: 500},
   init: {opacity: 1, zIndex: 99},
   drag: {opacity: 0.5, scale: 0.8, zIndex: 150},
   dragEnd: {
@@ -16,38 +16,37 @@ const Photo = posed.img ({
     opacity: 1,
     scale: 1,
     transition: {type: 'spring'},
-  }
+  },
 });
 
-@inject('store')
+@inject ('store')
 @observer
 export default class ProfilePhoto extends React.Component {
+  constructor (props) {
+    super (props);
 
-  constructor(props){
-    super(props);
-
-    this.dragging = this.dragging.bind(this);
+    this.dragging = this.dragging.bind (this);
   }
 
-  dragging(){
+  dragging () {
     let {store} = this.props.store;
     let {profilePhotoDragged} = store;
     store.profilePhotoDragged = !profilePhotoDragged;
 
     analytics.event ({
       category: 'PROFILE_PHOTO',
-      action: 'PROFILE_PHOTO_DRAGGED'
+      action: 'PROFILE_PHOTO_DRAGGED',
     });
   }
 
   render () {
     return (
-      <div>
+      <div className="c-profile-photo">
         <div onMouseDown={this.dragging} onMouseUp={this.dragging}>
           <Photo
             src="./img/me.jpg"
             alt="Alperen Turkoz"
-            className="img-fluid profile-photo" 
+            className="img-fluid photo"
           />
         </div>
         <div className="gulucuk">
