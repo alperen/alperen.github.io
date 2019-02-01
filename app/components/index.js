@@ -8,7 +8,6 @@ import SkillCards from './SkillCards';
 import Experience from './Experience';
 import Languages from './Languages';
 import Footer from './Footer';
-import Merhaba from './Merhaba';
 
 export {
     Introduction,
@@ -21,5 +20,4 @@ export {
     Experience,
     Languages,
     Footer,
-    Merhaba,
 }
