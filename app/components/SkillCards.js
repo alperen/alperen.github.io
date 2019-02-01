@@ -37,7 +37,7 @@ export default class SkillCards extends React.Component {
 
   render() {
     return (
-      <div className="c-skill-levels opacity-on-drag">
+      <div className="c-skill-levels opacity-on-drag d-none d-md-block">
         {colors.map(({ color, name }, ii) => {
           return (
             <div

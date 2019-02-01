@@ -1,19 +1,22 @@
 import React from 'react';
 
 export default class Introduction extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
   }
 
-  render () {
+  render() {
     return (
       <div>
         <div>
           <h2>Alperen TÜRKÖZ</h2>
         </div>
         <div>
-          <p className="mb-0">
+          <p className="mb-0 d-none d-md-block">
             junior javascript developer · from Izmir, Turkiye
+          </p>
+          <p className="mb-0 d-block d-md-none">
+            junior javascript developer <br /> from Izmir, Turkiye
           </p>
           <p className="mb-0">
             <a

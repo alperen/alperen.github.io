@@ -12,34 +12,37 @@ import {
   Footer,
 } from './components';
 
-import {inject, observer} from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 
-@inject ('store')
+@inject('store')
 @observer
 export default class App extends React.Component {
-  constructor () {
-    super ();
+  constructor() {
+    super();
   }
 
-  render () {
+  render() {
     return (
       <div className="container-fluid p-5">
-        <LookingButton />
+        <div className="d-none d-md-block">
+          <LookingButton />
+        </div>
         <div className="row">
-          <div className="col col-7">
+          <div className="col col-12 col-md-7">
             <div className="d-flex flex-row align-items-end">
-              <div className="col col-4">
+              <div className="col col-4 d-none d-md-block">
                 <ProfilePhoto />
               </div>
-              <div className="col col-8 pl-0 pb-0">
+              <div className="col col-12 col-md-8 pl-0 pb-0">
                 <Introduction />
               </div>
             </div>
             <div className="row mt-3">
               <div className="col-4">
-                <div className="d-flex flex-row-reverse other-links opacity-on-drag">
+                <div className="d-flex flex-md-row-reverse other-links opacity-on-drag">
                   <a
                     href="https://github.com/alperen"
+                    className="pr-2 pr-md-0"
                     target="_new"
                     data-balloon="Alperen  Turkoz's Github Account"
                     data-balloon-pos="down"
