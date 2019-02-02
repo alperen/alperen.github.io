@@ -1,4 +1,4 @@
-# repository of alperenturkoz.com
+# repository of alperenturkoz.github.io
 -----
 This is repository of my personel resume. The repository serving with Google Firebase at alperenturkoz.com (might be you can't reach nowadays.)
 
