@@ -51,7 +51,7 @@ export default class App extends React.Component {
                     {' '}<i className="fab fa-github-square fa-2x" />{' '}
                   </a>
                   <a
-                    href="https://github.com/alperen"
+                    href="https://www.linkedin.com/in/alperenturkoz/"
                     target="_new"
                     data-balloon="Alperen  Turkoz's Linkedin Account"
                     data-balloon-pos="down"
