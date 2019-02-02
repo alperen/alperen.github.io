@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-ga */ \"./node_modules/react-ga/dist/esm/index.js\");\n\nreact_ga__WEBPACK_IMPORTED_MODULE_0__[\"default\"].initialize('UA-131775667-1', {\n  debug: true\n});\nreact_ga__WEBPACK_IMPORTED_MODULE_0__[\"default\"].pageview(window.location.pathname + window.location.search);\n/* harmony default export */ __webpack_exports__[\"default\"] = (react_ga__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./app/analytics.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-ga */ \"./node_modules/react-ga/dist/esm/index.js\");\n\nreact_ga__WEBPACK_IMPORTED_MODULE_0__[\"default\"].initialize('UA-131775667-1', {\n  debug: false\n});\nreact_ga__WEBPACK_IMPORTED_MODULE_0__[\"default\"].pageview(window.location.pathname + window.location.search);\n/* harmony default export */ __webpack_exports__[\"default\"] = (react_ga__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./app/analytics.js?");
 
 /***/ }),
 
