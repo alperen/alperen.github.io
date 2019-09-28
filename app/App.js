@@ -12,10 +12,8 @@ import {
   Footer,
 } from './components';
 
-import { inject, observer } from 'mobx-react';
+import "./style/_test.scss";
 
-@inject('store')
-@observer
 export default class App extends React.Component {
   constructor() {
     super();
