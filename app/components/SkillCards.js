@@ -1,7 +1,4 @@
 import React from 'react';
-import posed from 'react-pose';
-
-import analytics from '../analytics';
 
 const colors = [
   { color: '#F7231A', name: 'Beginner' },
@@ -20,12 +17,6 @@ export default class SkillCards extends React.Component {
   filterBySkillLevel(id) {
     document.querySelectorAll(`.c-skill-single:not(.L-${id})`).forEach(e => {
       e.classList.add('opacitied');
-    });
-
-    analytics.event({
-      category: 'SKILLS',
-      action: 'SKILLS_FILTERED',
-      label: id,
     });
   }
 

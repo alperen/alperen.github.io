@@ -1,35 +1,5 @@
 import React from 'react';
-import posed, {PoseGroup} from 'react-pose';
-import analytics from '../analytics';
 
-const Button = posed.div ({
-  opened: {
-    width: '350px',
-    height: '165px',
-    transform: 'none',
-    transition: {
-      width: {ease: 'linear', delay: 100},
-      height: {ease: 'easeInOut', delay: 500},
-    },
-    applyAtEnd: {cursor: 'initial'},
-  },
-});
-
-const FirstText = posed.div ({
-  passAway: {
-    opacity: 0.8,
-    height: 0,
-    transition: {
-      height: {delay: 300, round: true},
-    },
-    applyAtEnd: {display: 'none'},
-  },
-});
-
-const interships = [
-  {title: 'this summer', content: 'as junior js dev · in izmir'},
-  {title: 'next winter', content: 'as junior js dev · at whole europe'},
-];
 
 export default class LookingButton extends React.Component {
   constructor () {
@@ -47,15 +17,11 @@ export default class LookingButton extends React.Component {
       firstTextStatus: 'passAway',
       fullContentDisplay: 'block',
     });
-    
-    analytics.event({
-      category:'INTERNSHIP_BTN',
-      action:'ENTERED_INTERNSHIP_BTN'
-    });
-
   }
 
   render () {
+
+    return null;
     const {
       poseStatus,
       ulStatus,
