@@ -1,10 +1,9 @@
 import Introduction from './Introduction';
 import ProfilePhoto from './ProfilePhoto';
 import Row from './Row';
-import LookingButton from './LookingButton';
 import Education from './Education';
 import Skills from './Skills';
-import SkillCards from './SkillCards';
+import SkillLevels from './SkillLevels';
 import Experience from './Experience';
 import Languages from './Languages';
 import Footer from './Footer';
@@ -13,10 +12,9 @@ export {
     Introduction,
     ProfilePhoto,
     Row,
-    LookingButton,
     Education,
     Skills,
-    SkillCards,
+    SkillLevels,
     Experience,
     Languages,
     Footer,
