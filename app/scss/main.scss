@@ -1,14 +1,8 @@
+@import "./_fonts";
+@import "./_colors";
+
 body{
-  font-family: initial !important;
-
-  .opacitied{
-    opacity: .5;
-  }
-
-  .has-opacity{
-    transition: all .3s;
-    opacity: 0.3;
-  }
+  font-family: 'Tinos', serif;
 
   a{
     color:$blue;
@@ -25,3 +19,4 @@ body{
     background: yellow;
   }
 }
+
