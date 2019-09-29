@@ -6,17 +6,17 @@ const list = [
     {title:'Mugla Sitki Kocman Universitesi', content:'I\'ve joined 2017 September to university. Now i\'m studying second grade IT Engineering at Technology Depertmant'}
 ];
 
-export default class Education extends React.Component {
-  render () {
-    return (
-      <div>
-        {list.slice(0).reverse().map(({title,content}) => {
-            return <details key={Math.random()}>
-            <summary>{title}</summary>
-            <p className="text-black-50 text-small">{content}</p>
-          </details>
-        })}
-      </div>
-    );
-  }
+function Education() {
+  return (
+    <div>
+      {list.slice(0).reverse().map(({title,content = null}) => {
+          return <details key={Math.random()}>
+          <summary>{title}</summary>
+          <p className="text-black-50 text-small">{content}</p>
+        </details>
+      })}
+    </div>
+  )
 }
+
+export default Education;
