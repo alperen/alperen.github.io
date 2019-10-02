@@ -8,7 +8,8 @@ import {
   SkillLevels,
   Experience,
   Languages,
-  Footer
+  Footer,
+  Studies
 } from "./components";
 
 import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -60,13 +61,14 @@ function App() {
 
           <Row title="Summary">
             <p>
-              Hi, it's Alperen. I am 20 years old. I was born at Izmir, Turkiye.
-              Usually I'm living here. Also I'm studying second grade at Mugla
-              Sitki Kocman University. I am programming various things since i
-              was 15 years old. I am able to use PHP, Javascript or little bit
-              SCSS and Python. But Javascript is more effective. I am
-              interesting to machine learning and computer science. I am
-              studying on them.
+              Hi, it's Alperen. I am 21 years old. I was born at Izmir, Turkiye.
+              I'm living between Mugla and Izmir. Also I'm studying third grade at Mugla
+              Sitki Kocman University. I can write Javascript fluently. My hobbies are fitness, dining, listen to music and write anything that ordinary.
+              <br />
+              <b className="text-danger"><i>
+                I'm looking for an internship opportunity next spring semester along in İzmir, Turkiye.
+                <a href="#Studies"> Look over my studies.</a>
+              </i></b>
             </p>
           </Row>
 
@@ -81,6 +83,10 @@ function App() {
 
           <Row title="Experience">
             <Experience />
+          </Row>
+
+          <Row title="Studies">
+            <Studies />
           </Row>
 
           <Row title="Languages">

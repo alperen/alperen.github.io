@@ -17,7 +17,7 @@ function Skills() {
           >
             <span>
               <i className="fas fa-caret-right" />
-              {text}
+              <span dangerouslySetInnerHTML={{__html: text}}/>
               <span className="level" style={{ backgroundColor: level.color }} />
             </span>
           </div>

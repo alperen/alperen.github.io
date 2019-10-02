@@ -7,7 +7,7 @@ function Footer() {
         <div className="pl-2">
           <span> Thank you for your interest. </span> <br />
           <span className="text-muted text-small">
-            Last Update on Content: 04.01.2019
+            Last Update on Content: 02.10.2019
           </span>
         </div>
       </div>
