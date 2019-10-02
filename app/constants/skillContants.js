@@ -1,0 +1,101 @@
+const SKILL_EXPERIENCE_LEVEL_COLORS = {
+  RED: "#F7231A",
+  YELLOW: "#FAA219",
+  GREEN: "#4BCF9B",
+  PURPLE: "#523973"
+};
+
+const SKILL_EXPERIENCE_LEVELS_KEYS = {
+  BEGINNER: "beginner",
+  MEDIUM: "medium",
+  ENOUGH: "enough",
+  INTERESTED_IN: "interested in"
+};
+
+const SKILL_EXPERIENCE_LEVELS = {
+  [SKILL_EXPERIENCE_LEVELS_KEYS.BEGINNER]: {
+    color: SKILL_EXPERIENCE_LEVEL_COLORS.RED,
+    label: "Beginner",
+    class: "label-begginer"
+  },
+  [SKILL_EXPERIENCE_LEVELS_KEYS.MEDIUM]: {
+    color: SKILL_EXPERIENCE_LEVEL_COLORS.YELLOW,
+    label: "Medium",
+    class: "label-medium"
+  },
+  [SKILL_EXPERIENCE_LEVELS_KEYS.ENOUGH]: {
+    color: SKILL_EXPERIENCE_LEVEL_COLORS.GREEN,
+    label: "Enough",
+    class: "label-enough"
+  },
+  [SKILL_EXPERIENCE_LEVELS_KEYS.INTERESTED_IN]: {
+    color: SKILL_EXPERIENCE_LEVEL_COLORS.PURPLE,
+    label: "Interested In",
+    class: "label-interested-in"
+  }
+};
+
+const SKILL_LIST = [
+  {
+    text: "Javascript",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.ENOUGH]
+  },
+  {
+    text: "React",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.ENOUGH]
+  },
+  {
+    text: "React Native",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.MEDIUM]
+  },
+  {
+    text: "Next.js",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.BEGINNER]
+  },
+  {
+    text: "PHP",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.ENOUGH]
+  },
+  {
+    text: "Laravel",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.MEDIUM]
+  },
+  {
+    text: "MYSQL",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.ENOUGH]
+  },
+  {
+    text: "Firebase",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.MEDIUM]
+  },
+  {
+    text: "SCSS",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.MEDIUM]
+  },
+  {
+    text: "webpack",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.ENOUGH]
+  },
+  {
+    text: "Bootstrap",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.MEDIUM]
+  },
+  {
+    text: "jest",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.BEGINNER]
+  },
+  {
+    text: "Go",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.INTERESTED_IN]
+  },
+  {
+    text: "Docker",
+    level: SKILL_EXPERIENCE_LEVELS[SKILL_EXPERIENCE_LEVELS_KEYS.INTERESTED_IN]
+  }
+];
+
+export {
+  SKILL_EXPERIENCE_LEVELS,
+  SKILL_EXPERIENCE_LEVEL_COLORS,
+  SKILL_LIST
+};
